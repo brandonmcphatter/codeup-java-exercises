@@ -5,10 +5,16 @@ public class ConsoleExercises {
         double pi = 3.14159;
         System.out.printf("The value of pi is approximately %.2f %n", pi);
 
+//        Explore Scanner Class
+
+//        1)
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter an integer: " );
         int userInputInt = sc.nextInt();
         System.out.printf("Your integer is %d %n", userInputInt);
+
+//        2)
 
         System.out.println("Enter 3 words: ");
         String firstWord = sc.next();
@@ -19,9 +25,15 @@ public class ConsoleExercises {
         System.out.println(secondWord);
         System.out.println(thirdWord);
 
+//        3/4)
+
         System.out.println("Enter a sentence: ");
         String userSentence = sc.nextLine();
         System.out.println(userSentence);
+
+//        Calculate the perimeter and area of Codeup's Classroom
+
+//        1)
 
         System.out.println("Enter length of your room in ft: ");
         String roomLength = sc.nextLine();
@@ -30,8 +42,11 @@ public class ConsoleExercises {
 
         int rmLength = Integer.parseInt(roomLength);
         int rmWidth = Integer.parseInt(roomWidth);
-        int perimeter = rmLength*2 + rmWidth*2;
-        int area = rmLength*rmWidth;
+
+//        2)
+
+        int area = rmLength * rmWidth;
+        int perimeter = (rmLength * 2) + (rmWidth * 2);
         System.out.println("Length: " + rmLength + "ft & Width: " + rmWidth + "ft");
         System.out.println("Room Perimeter is: " + perimeter + "ft");
         System.out.println("Room Area is: " + area + "ft");
