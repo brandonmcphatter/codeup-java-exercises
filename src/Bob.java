@@ -16,21 +16,19 @@ public class Bob {
             do {
                 System.out.println("Talk to Bob:");
                 String userResponse = sc.nextLine();
-                if (userResponse.endsWith("?")){
+                if (userResponse.endsWith("?")) {
                     System.out.println("Sure -_-");
                 } else if (userResponse.endsWith("!")) {
                     System.out.println("Whoaaa, Chill Out");
-                } else if (userResponse.equals("")) {
-                    System.out.println("Fine! Be that way...");
-                } else {
+                } else if (userResponse.isEmpty()) {
+                    System.out.println("Fine. Be that way!");
+                } else if (userResponse.equals("exit")) {
+                    talkToBob = false;
+                    System.out.println("Bob says BYEEEEE!");
+                }else {
                     System.out.println("Whatever.");
                 }
-            } while (talkToBob = true);
+            } while (talkToBob);
         }
-
-
-
-
-
     }
 }
