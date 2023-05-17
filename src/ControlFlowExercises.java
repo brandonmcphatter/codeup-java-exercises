@@ -82,7 +82,7 @@ public class ControlFlowExercises {
                 System.out.println("You got an A!");
             } else if (userGrade >= 80 & userGrade <= 87) {
                 System.out.println("You got a B");
-            } else if (userGrade >= 67 & userGrade <= 86) {
+            } else if (userGrade >= 67 & userGrade <=79) {
                 System.out.println("You got a C");
             } else if (userGrade >= 60 & userGrade <= 66){
                 System.out.println("You got a D");
@@ -98,9 +98,5 @@ public class ControlFlowExercises {
                 System.out.println("Thanks for your participation!");
             }
         } while (confirm);
-
-
-
-
     }
 }
