@@ -62,18 +62,18 @@ public class MethodsExercise {
         return scanner.nextLine();
     }
 
-    public static int rollDice (){
+    public static int rollTheDice (){
         Scanner sc = new Scanner(System.in);
         System.out.println("How many sides do your dice have?");
         int sides = sc.nextInt();
-        int d1 = (int)((Math.random() * sides) + 1);
-        int d2 = (int)((Math.random() * sides) + 1);
+        int d1 = (int)(Math.random() * sides + 1);
+        int d2 = (int)(Math.random() * sides + 1);
         int total = d1 + d2;
         System.out.printf("First is %s and Second is %s. The total is %s.", d1, d2, total);
         System.out.println("Continue? [y/n]");
         String yesOrNo = sc.next();
         if (yesOrNo.equals("y")){
-            rollDice();
+            rollTheDice();
         } else if (yesOrNo.equals("n")){
             System.out.println("Peace Out!");
         }
@@ -109,7 +109,7 @@ public class MethodsExercise {
 
 //        #4
 
-        rollDice();
+        rollTheDice();
 
     }
 }
