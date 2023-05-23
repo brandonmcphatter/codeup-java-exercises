@@ -6,6 +6,7 @@ public class InputTest {
 
     Input test = new Input();
 
+    System.out.println("Enter a string:");
     test.getString();
 
     test.yesNo();
@@ -18,6 +19,7 @@ public class InputTest {
 
     test.getDouble();
 
-        System.out.println("This concludes the test. Thank you!");
+    System.out.println("This concludes the test. Thank you!");
+
     }
 }
