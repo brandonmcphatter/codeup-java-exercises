@@ -14,7 +14,7 @@ public class InputTest {
 
     test.getInt();
 
-    test.getDouble(1, 100);
+    test.getDouble(1, 10);
 
     test.getDouble();
 
