@@ -20,7 +20,6 @@ public class Input {
     }
 
     public int getInt(int min, int max) {
-        System.out.printf("Enter an INTEGER between %d and %d \n", min, max);
         int userInt = scanner.nextInt();
         if (userInt < min || userInt > max) {
             System.out.println("Read the rules and try again!");
@@ -30,13 +29,11 @@ public class Input {
     }
 
     public int getInt() {
-        System.out.println("Enter an INTEGER:");
         int userInt = scanner.nextInt();
         return userInt;
     }
 
     public double getDouble(double min, double max) {
-        System.out.printf("Enter a DOUBLE between %.2f and %.2f: \n", min, max);
         double userDouble = scanner.nextDouble();
         if (userDouble < min || userDouble > max) {
             System.out.println("Read the rules and try again!");
@@ -46,7 +43,6 @@ public class Input {
     }
 
     public double getDouble() {
-        System.out.println("Enter a DOUBLE:");
         double userDouble = scanner.nextDouble();
         return userDouble;
     }

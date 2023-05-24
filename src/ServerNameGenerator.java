@@ -11,6 +11,6 @@ public class ServerNameGenerator {
     public static void main(String[] args) {
         String one = returnRandom(adjectives);
         String two = returnRandom(nouns);
-        System.out.printf("Look at this %s-%s !!!", one, two);
+        System.out.printf("Server: \n%s-%s", one, two);
     }
 }
