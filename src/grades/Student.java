@@ -22,6 +22,12 @@ public class Student {
         grades.add(grade);
     }
 
+    public void addThreeGrades(int grade1, int grade2, int grade3) {
+        grades.add(grade1);
+        grades.add(grade2);
+        grades.add(grade3);
+    }
+
     public double getGradeAverage() {
         double gradeSum = 0;
         for (Integer grade : grades) {
@@ -32,9 +38,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", grades=" + grades +
-                '}';
+        return "Name: " + name + "\n" + "Grade Avg: " + getGradeAverage();
+
     }
 }

@@ -15,7 +15,7 @@ public class Input {
     }
 
     public boolean yesNo() {
-        System.out.println("Continue? [yes/no]");
+        System.out.println("Continue? [yes/no]\n");
         return scanner.nextLine().toLowerCase().contains("y");
     }
 
