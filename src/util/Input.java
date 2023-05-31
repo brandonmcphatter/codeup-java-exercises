@@ -20,6 +20,7 @@ public class Input {
     }
 
     public int getInt(int min, int max) {
+
         int userInt = scanner.nextInt();
         if (userInt < min || userInt > max) {
             System.out.println("Read the rules and try again!");
@@ -29,8 +30,13 @@ public class Input {
     }
 
     public int getInt() {
-        int userInt = scanner.nextInt();
-        return userInt;
+        try {
+            String input = getString();
+            return Integer.valueOf(input);
+        } catch (NumberFormatException e) {
+            System.out.println("Oops! Something went wrong. Please try again.");
+            return getInt();
+        }
     }
 
     public double getDouble(double min, double max) {
@@ -43,8 +49,13 @@ public class Input {
     }
 
     public double getDouble() {
-        double userDouble = scanner.nextDouble();
-        return userDouble;
+        try {
+            String input = getString();
+            return Double.valueOf(input);
+        } catch (NumberFormatException e) {
+            System.out.println("Oops! Something went wrong. Please try again.");
+            return getDouble();
+        }
     }
 
 }

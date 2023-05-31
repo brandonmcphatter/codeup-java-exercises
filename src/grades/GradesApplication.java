@@ -1,11 +1,30 @@
 package grades;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
 import util.Input;
 
 public class GradesApplication {
+
+    public static void main(String[] args) {
+
+        HashMap<String, Student> students = new HashMap<>();
+
+        students.put("TheCreatorOfAll", new Student("Brandon", new ArrayList<>()));
+        students.get("TheCreatorOfAll").addThreeGrades(95, 80, 100);
+        students.put("JavaScriptJedi", new Student("Theo", new ArrayList<>()));
+        students.get("JavaScriptJedi").addThreeGrades(99, 91, 95);
+        students.put("BrazilianBabeMagnet", new Student("Tim", new ArrayList<>()));
+        students.get("BrazilianBabeMagnet").addThreeGrades(100, 88, 97);
+        students.put("KnicksIn6", new Student("Joseph", new ArrayList<>()));
+        students.get("KnicksIn6").addThreeGrades(91, 82, 90);
+
+//        Application Start
+
+        System.out.println("Welcome! \n\nHere are the GitHub usernames of our students:\n");
+        displayUserNames(students);
+        pickYourStudent(students);
+    }
 
     public static void displayUserNames(HashMap<String, Student> hashmap) {
         Set<String> userNames = hashmap.keySet();
@@ -40,28 +59,5 @@ public class GradesApplication {
                 System.out.println("See ya!");
             }
         }
-    }
-
-    public static void main(String[] args) {
-        HashMap<String, Student> students = new HashMap<>();
-
-        students.put("TheCreatorOfAll", new Student("Brandon", new ArrayList<>()));
-        students.get("TheCreatorOfAll").addThreeGrades(95, 80, 100);
-
-        students.put("JavaScriptJedi", new Student("Theo", new ArrayList<>()));
-        students.get("JavaScriptJedi").addThreeGrades(99, 91, 95);
-
-        students.put("BrazilianBabeMagnet", new Student("Tim", new ArrayList<>()));
-        students.get("BrazilianBabeMagnet").addThreeGrades(100, 88, 97);
-
-        students.put("KnicksIn6", new Student("Joseph", new ArrayList<>()));
-        students.get("KnicksIn6").addThreeGrades(91, 82, 90);
-
-//        Application Start
-
-        System.out.println("Welcome! \n\nHere are the GitHub usernames of our students:\n");
-        displayUserNames(students);
-        pickYourStudent(students);
-
     }
 }
