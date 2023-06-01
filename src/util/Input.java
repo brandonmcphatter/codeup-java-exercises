@@ -57,5 +57,4 @@ public class Input {
             return getDouble();
         }
     }
-
 }
